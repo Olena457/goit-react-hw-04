@@ -1,0 +1,61 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #008000;
+  margin-bottom: 12px;
+  padding: 8px;
+}
+.formSearch {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+  width: 600px;
+}
+
+.searchCont {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  /* width: 300px; */
+}
+
+/* padding-right: 30px;  */
+/* .searchInput {
+  width: 100%;
+  padding: 10px 10px 10px 30px;
+  box-sizing: border-box;
+}
+
+*/
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: black;
+}
+
+.searchIcon {
+  left: 10px;
+}
+.search-icon:hover {
+  color: gray;
+}
+
+.clearIcon {
+  right: 10px;
+}
+.clearIcon:hover {
+  color: #000;
+}
+
+.btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

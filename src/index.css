@@ -26,15 +26,26 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  font-style: normal;
+  /* min-width: 320px; */
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
-
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -45,6 +56,20 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+}
+label {
+  margin: 0;
+  padding: 0;
+}
+input[type='text'] {
+  width: 100%;
+}
+/* form {
+  width: 97%;
+} */
+input {
+  width: 100%;
+  padding: 10px 10px 10px 30px;
 }
 button:hover {
   border-color: #646cff;
