@@ -40,10 +40,15 @@ h6,
 p {
   margin: 0;
 }
+p {
+  font-weight: 500;
+  color: #008000;
+}
 ul,
 ol {
   list-style: none;
-  padding-left: 0;
+  /* padding-left: 0; */
+  padding: 0;
   margin: 0;
 }
 button {
@@ -68,6 +73,7 @@ input[type='text'] {
   width: 97%;
 } */
 input {
+  outline: none;
   width: 100%;
   padding: 10px 10px 10px 30px;
 }
@@ -76,7 +82,7 @@ button:hover {
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 1px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
@@ -85,7 +91,7 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #008000;
   }
   button {
     background-color: #f9f9f9;

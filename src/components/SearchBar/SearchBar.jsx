@@ -37,10 +37,14 @@ export const SearchBar = ({ submit }) => {
             placeholder="Search images and photos"
             autoFocus
           />
+          <button className={css.btn} type="submit">
+            Search
+          </button>
           <FaSearch
-            className={`${css.icon} ${css.searchIcon}`}
             onClick={handleSubmit}
+            className={`${css.icon} ${css.searchIcon}`}
           />
+
           {query && (
             <FaTimes
               className={`${css.icon} ${css.clearIcon}`}
@@ -48,9 +52,6 @@ export const SearchBar = ({ submit }) => {
             />
           )}
         </div>
-        <button className={css.btn} type="submit">
-          Search
-        </button>
       </form>
       <Toaster />
     </header>

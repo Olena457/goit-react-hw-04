@@ -1,5 +1,5 @@
 import axios from 'axios';
-export const fetchUnsplash = async ({ query, page, per_page = 15 }) => {
+export const fetchUnsplash = async ({ query, page, per_page = 12 }) => {
   const accessKey = '8_8sodKPxiolFkYrfqUjMUwizh86FyVeWy_c_fADcCw';
   axios.defaults.baseURL = axios.defaults.headers.common['Authorization'] =
     accessKey;

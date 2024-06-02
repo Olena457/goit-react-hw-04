@@ -10,7 +10,7 @@
   height: 40px;
   margin-top: 32px;
   margin-bottom: 44px;
-  margin-left: 50%;
+  /* margin-left: 50%; */
   transform: translate(-50%);
   border-radius: 8px;
   border: 1px solid transparent;

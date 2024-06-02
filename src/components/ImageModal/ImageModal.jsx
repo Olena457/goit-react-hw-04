@@ -14,7 +14,7 @@ const customStyles = {
     transform: 'translate(-50%, -50%)',
   },
 };
-const ImageModal = ({ modalIsOpen, onRequestClose, image }) => {
+const ImageModal = ({ modalIsOpen, onRequestClose, image, onSelect }) => {
   return (
     <Modal
       className={css.modalContainer}
@@ -24,12 +24,13 @@ const ImageModal = ({ modalIsOpen, onRequestClose, image }) => {
       style={customStyles}
     >
       {image && (
-        <div className={css.modalImg}>
-          <img
+        <div>
+          <img>
             className={css.modalImg}
             src={image.urls.regular}
             alt={image.slug}
-          />
+            onClick={() => onSelect(image.regular)};
+          </img>
           <div>
             <ul className={css.imgDescription}>
               <li>{/* <p>{image.tags}</p> */}</li>
@@ -40,7 +41,7 @@ const ImageModal = ({ modalIsOpen, onRequestClose, image }) => {
                 <p>By: {image.user.name}</p>
               </li>
               <li>
-                <p>Likes: {image.user.likes}</p>
+                <p>Likes: {image.likes}</p>
               </li>
             </ul>
           </div>

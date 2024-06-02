@@ -1,7 +1,17 @@
-.galleryList {
+/* .galleryList {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+} */
+.galleryList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  min-width: 1280px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
 }
