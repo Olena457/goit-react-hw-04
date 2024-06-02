@@ -78,6 +78,7 @@ function App() {
           image={modalImage}
         />
       )}
+
       {images.map(image => (
         <img
           key={image.id}

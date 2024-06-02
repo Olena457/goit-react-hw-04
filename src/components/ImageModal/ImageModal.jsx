@@ -23,6 +23,7 @@ const ImageModal = ({ modalIsOpen, onRequestClose, image, onSelect }) => {
       contentLabel="Image Modal"
       style={customStyles}
     >
+      console.log(image)
       {image && (
         <div>
           <img>
