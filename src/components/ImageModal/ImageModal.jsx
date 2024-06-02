@@ -18,7 +18,7 @@ const ImageModal = ({ isOpen, onRequestClose, image, onSelect }) => {
   console.log(image);
   return (
     <Modal
-      className={`${css.modalContainer} ${css.modalContent} ${css.close} ${css.imgDescription}`}
+      className={`${css.modalContainer} ${css.modalImg}`}
       isOpen={isOpen}
       onRequestClose={onRequestClose}
       contentLabel="Image Modal"
@@ -27,8 +27,8 @@ const ImageModal = ({ isOpen, onRequestClose, image, onSelect }) => {
       {image && (
         <div>
           <img
-            key={image.id}
             className={css.modalImg}
+            key={image.id}
             src={image.urls.regular}
             alt={image.slug}
             onClick={() => onSelect(image.urls.regular)}
