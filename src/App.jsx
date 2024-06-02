@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
+import css from './components/ImageModal/ImageModal';
 import Loader from './components/Loader/Loader';
 import ImageGallery from './components/ImageGallery/ImageGallery';
 import SearchBar from './components/SearchBar/SearchBar';
@@ -112,7 +113,7 @@ function App() {
     setModalImage(null);
   };
 
-  const itemsPerPage = 15;
+  const itemsPerPage = 12;
   useEffect(() => {
     if (!query) return;
     async function getImages() {
@@ -143,11 +144,10 @@ function App() {
       {loading && <Loader />}
       {loading && <p>Loading data, please wait...</p>}
       {hasMore && !loading && <LoadMoreBtn onClick={loadMore} />}
-      {error && (
-        <p>Whoops, something went wrong! Please try reloading this page!</p>
-      )}
+
       {modalImage && (
         <ImageModal
+          className={css.modalImg}
           onSelect={handleImageModal}
           isOpen={!!modalImage}
           onRequestClose={closeModal}

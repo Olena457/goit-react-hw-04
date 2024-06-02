@@ -5,6 +5,7 @@ export const fetchUnsplash = async ({ query, page, per_page = 12 }) => {
     accessKey;
   const response = await axios.get('https://api.unsplash.com/search/photos', {
     params: {
+      asset_type: 'photo',
       orientation: 'landscape',
       query,
       page,
