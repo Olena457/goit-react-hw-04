@@ -17,7 +17,7 @@ const customStyles = {
 const ImageModal = ({ modalIsOpen, onRequestClose, image, onSelect }) => {
   return (
     <Modal
-      className={css.modalContainer}
+      className={`${css.modalContainer} ${css.modalContent} ${css.close} ${css.imgDescription} `}
       isOpen={modalIsOpen}
       onRequestClose={onRequestClose}
       contentLabel="Image Modal"

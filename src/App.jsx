@@ -78,18 +78,6 @@ function App() {
           image={modalImage}
         />
       )}
-
-      {images.map(image => (
-        <img
-          key={image.id}
-          src={image.urls.regular}
-          alt={image.slug}
-          onClick={() => {
-            setModalImage(image.urls.regular);
-            openModal(image.urls.regular);
-          }}
-        />
-      ))}
     </>
   );
 }

@@ -8,7 +8,6 @@ const ImageCard = ({ image, onClick }) => {
         className={css.itemImg}
         src={image.urls.small}
         alt={image.slug}
-        id={image.id}
         key={image.id}
         onClick={() => onClick(image)}
       />
